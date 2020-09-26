@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<Html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+       <link rel="stylesheet" href="style.css">
+    <title></title>
+    </head>
+    <body>
+  
+      
+
+        <!--Navigation-->
+        <nav class="main-nav">
+           <div><a href="About.html">About me</a></div>
+           <div><a href="Skills.html">Skills</a></div>
+           <div><a href="Projects.html">Projects</a></div>
+           <div><a href="Contact.html">Contact</a></div>
+          
+        </nav>
+     <!-- Top container-->
+     <section class= "container">
+					<h1>WELCOME TO MY WEBSITE</h1>
+           <p>Mobile and Web Developer make software specific to android phones and make applications that require web browsers to run.They also work closely with computer analysts and engineers in applying the various languages for creating and developing the mobile apps.</p>
+              <p class="readmore-content">A web developer or programmer is someone who takes a web design, which has been created by either a client or a design team and turns it into a website. They do this 
+              by writing lines and lines of complicated code, using a variety of languages.</p>
+            </p>
+           <p class="readmore"><a class="readmore-link"href="#" class="btn" onclick="showMore()">READ MORE</a></p>
+     </section>
+
+
+     <footer>
+      <div class="icon">
+        <a href="https://github.com/ngwako-dev/git-basic-exercises/blob/master/README.md"><img src="github.png"/>
+        <a href="https://www.instagram.com/cngmoshobane/"><img src="instagram.jpeg"/>
+           <a href="https://za.linkedin.com/in/ngwako-gift-moshobane-66558ab8"><img src="linkedin.jpeg"/>   
+      </div>
+   </footer>
+    <script>
+       function showMore(){
+         var readMoreBtn = document.getElementsByClassName("readmore-link")[0];
+          var myP = document.getElementsByClassName("readmore-content")[0];
+          var displayStyle = getComputedStyle(myP,'readmore-content');
+          console.log(displayStyle.display);
+          if(displayStyle.display === "none"){
+             myP.style.display = "block";
+             readMoreBtn.innerHTML = "READ LESS";
+            
+          }else{
+             myP.style.display = "none";
+             readMoreBtn.innerHTML = "READ MORE";
+             
+          }
+       }
+    </script>
+    </body>
+</Html>
